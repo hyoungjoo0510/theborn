@@ -299,13 +299,15 @@ header #nav>li.active>.sub{
     max-width: 229px;
     width: 100%;
     /* height: 82.5px; */
-    height: calc(100% / 6);
+    height: calc(495px / 6);
     overflow: hidden;
+}
+.backboyBannerWrap>.pizzaList li>a{
     opacity: 0.5;
     transition: 0.5s;
 }
-.backboyBannerWrap>.pizzaList li.active,
-.backboyBannerWrap>.pizzaList li.over{
+.backboyBannerWrap>.pizzaList li.active>a,
+.backboyBannerWrap>.pizzaList li.over>a{
     opacity: 1;
 }
 .backboyBannerWrap>.pizzaList li img{

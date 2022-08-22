@@ -1,11 +1,13 @@
-$(function(){
+
+window.onload = function(){
+
     //브라우저의 너비값
     let wWidth = $(window).outerWidth();
     // console.log(wWidth)
 
     //backboyBanner의 banner이미지의 높이값을 저장하는 변수
-    let imgHeight = $(".banner>li:eq(0)>img").height();
-    // console.log("이미지 높이: "+imgHeight);
+    let imgHeight = $(".banner>li>img").height();
+    console.log("이미지 높이1: "+imgHeight);
 
     $(window).on("resize", function(){
 
@@ -280,4 +282,4 @@ $(function(){
             showYoutube--;
             moveBanner()
         })
-})
+}
