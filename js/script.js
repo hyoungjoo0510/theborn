@@ -90,6 +90,7 @@ window.onload = function(){
             $(".bg").css("visibility", "visible").stop().animate({
                 opacity: 1
             }, 300)
+            $("body").css("overflow", "hidden")
         } else {
             $(this).find(".hamText").children().text("MENU");
             $("#nav>li").removeClass("active")
@@ -98,6 +99,7 @@ window.onload = function(){
             }, 300, function(){
                 $(this).css("visibility", "hidden")
             })
+            $("body").css("overflow", "auto")
         }
     })
 
