@@ -28,12 +28,12 @@ window.onload = function(){
             $(".pizzaList>ul>li").height("auto");
         }
 
-        // showthumbnail=0;
-        // showYoutube=0;
-        // $(".mainYoutube>ul>li").eq(showYoutube).addClass("active").siblings().removeClass("active");
-        // $(".thumnailWrap").css("left", 0)
-        // $(".thumnailWrap>li").eq(showthumbnail+2).addClass("active").siblings().removeClass("active")
-        // $(".thumnailWrap>li").eq(count-3).addClass("active2").siblings().removeClass("active2")
+        showthumbnail=0;
+        showYoutube=0;
+        $(".mainYoutube>ul>li").eq(showYoutube).addClass("active").siblings().removeClass("active");
+        $(".thumnailWrap").css("left", 0)
+        $(".thumnailWrap>li").eq(showthumbnail+2).addClass("active").siblings().removeClass("active")
+        $(".thumnailWrap>li").eq(count-3).addClass("active2").siblings().removeClass("active2")
     })
 
     //#nav ///////////////////////////////////////////
