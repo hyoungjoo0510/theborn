@@ -345,7 +345,7 @@ header #nav>li.active>.sub{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 50px 0;
+    /* margin: 50px 0; */
 }
 .backboyWrap>.backboysub>.subImg{
     position: relative;
@@ -355,11 +355,15 @@ header #nav>li.active>.sub{
 .backboyWrap>.backboysub>.subImg>img{
     width: 100%;
 }
+.backboyWrap>.backboysubTop{
+    margin-bottom: 25px;
+}
 .backboyWrap>.backboysubTop>.subImg{
     left: -100%;
     /* transition: 2s; */
 }
 .backboyWrap>.backboysubTop>.subText{
+    padding-left: 30px;
     opacity: 0;
 }
 .backboyWrap>.backboysubBottom>.subImg{
@@ -367,11 +371,12 @@ header #nav>li.active>.sub{
     /* transition: 2s; */
 }
 .backboyWrap>.backboysubBottom>.subText{
+    padding-left: 30px;
     opacity: 0;
 }
 .backboyWrap>.backboysub>.subText{
-    max-width: 600px;
-    padding: 0 100px;
+    width: 600px;
+    /* padding: 0 100px; */
     /* background-color: aqua; */
 }
 .backboyWrap>.backboysub>.subText>p{
@@ -771,7 +776,7 @@ footer #familySite{
         height: 45.796875vw;
     }
     .backboyWrap>.backboysub>.subText{
-        padding: 0 50px;
+        /* padding: 0 50px; */
     }
     .backboyWrap>.backboysub>.subText>p{
         font-size: 2.1875vw;
@@ -922,6 +927,9 @@ footer #familySite{
     }
     .backboyWrap>.backboysub>.subText>span{
         display: none;
+    }
+    .backboyWrap>.backboysub>.subText>p{
+        font-size: 3.1875vw;
     }
     .brandWrap>.brandBanner>ul>li>.rightBox{
         padding: 0 10px;
