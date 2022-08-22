@@ -816,8 +816,12 @@ footer #familySite{
     .backboyBannerWrap{
         display: block;
     }
-    .youtubeWrap>.mainYoutube{
-        height: 52.94117647058824vw;
+
+    .youtubeWrap>.youtubeSlide ul{
+
+        width: 1000%;
+        height: 26.85185185185185vw;
+        margin-left: -75%;
     }
     footer .footList>.mid{
         display: none;
