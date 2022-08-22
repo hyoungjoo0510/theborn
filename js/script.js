@@ -10,7 +10,7 @@ $(function(){
     $(window).on("resize", function(){
 
         wWidth = $(this).outerWidth();
-        console.log(wWidth)
+        // console.log(wWidth)
         
         // pWidth = $(".pizzaList>ul>li").width();
         // pHeight = pWidth * 0.3602620087336245;
@@ -28,6 +28,8 @@ $(function(){
         }
 
         showthumbnail=0;
+        showYoutube=0;
+        $(".mainYoutube>ul>li").eq(showYoutube).addClass("active").siblings().removeClass("active");
         $(".thumnailWrap").css("left", 0)
         $(".thumnailWrap>li").eq(showthumbnail+2).addClass("active").siblings().removeClass("active")
         $(".thumnailWrap>li").eq(count-3).addClass("active2").siblings().removeClass("active2")
@@ -236,7 +238,7 @@ $(function(){
             $(".thumnailWrap").stop().animate({
                 left: -showthumbnail*liWidth
             }, 500)
-            console.log(showthumbnail)
+            // console.log(showthumbnail)
             if(showthumbnail == 0){
                 $(".thumnailWrap>li").eq(12).addClass("active2")
             }else{
@@ -260,7 +262,7 @@ $(function(){
             .siblings().removeClass("active")
         }
         $(".youtubeBtn>.rightBtn").on("click", function(){
-            console.log("클릭")
+            // console.log("클릭")
             if(showthumbnail == liCount){
                 showthumbnail=0;
                 $(".thumnailWrap").css("left", 0);
